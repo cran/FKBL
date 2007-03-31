@@ -1,0 +1,11 @@
+source("script.R")
+pima=read.table("../data/pima.tab")
+#data(pima)
+pima[,1]=pima[,1]/10
+pima[,2]=pima[,2]/10
+pima[,3]=pima[,3]/10
+pima[,4]=pima[,4]/10
+pima[,5]=pima[,5]/10
+pima[,8]=pima[,8]/10
+salida<-EXPERIMENT(pima,execute=list(mich=1,hyb=1,pitt=1))
+boxplot(salida$e,na.rm=TRUE)

@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE KnowledgeBase SYSTEM "FKBL.dtd">
+<?xml-stylesheet type="text/xsl" href="FKBL.xsl"?>
+<KnowledgeBase>
+<Partition>
+<ex type="double" len="2">0 1 </ex>
+</Partition>
+<Partition>
+<ex type="double" len="2">0 1 </ex>
+</Partition>
+<Partition>
+<ex type="double" len="2">0 1 </ex>
+</Partition>
+<Rule>
+<antecedent type="int" len="3">0 0 0 </antecedent>
+<consecuent type="double" len="3">0.65252 0 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 0 0 </antecedent>
+<consecuent type="double" len="3">0.65252 1 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 0 0 </antecedent>
+<consecuent type="double" len="3">0.65252 0 1 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 0 1 </antecedent>
+<consecuent type="double" len="3">0.591665 0 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 0 1 </antecedent>
+<consecuent type="double" len="3">0.591665 1 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 0 1 </antecedent>
+<consecuent type="double" len="3">0.591665 0 1 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 1 0 </antecedent>
+<consecuent type="double" len="3">0.514987 0 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 1 0 </antecedent>
+<consecuent type="double" len="3">0.514987 1 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 1 0 </antecedent>
+<consecuent type="double" len="3">0.514987 0 1 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 1 1 </antecedent>
+<consecuent type="double" len="3">0.606369 0 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 1 1 </antecedent>
+<consecuent type="double" len="3">0.606369 1 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 1 1 </antecedent>
+<consecuent type="double" len="3">0.606369 0 1 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 0 0 </antecedent>
+<consecuent type="double" len="3">0.802447 0 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 0 0 </antecedent>
+<consecuent type="double" len="3">0.802447 1 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 0 0 </antecedent>
+<consecuent type="double" len="3">0.802447 0 1 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 0 1 </antecedent>
+<consecuent type="double" len="3">0.775687 0 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 0 1 </antecedent>
+<consecuent type="double" len="3">0.775687 1 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 0 1 </antecedent>
+<consecuent type="double" len="3">0.775687 0 1 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 1 0 </antecedent>
+<consecuent type="double" len="3">0.618244 0 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 1 0 </antecedent>
+<consecuent type="double" len="3">0.618244 1 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 1 0 </antecedent>
+<consecuent type="double" len="3">0.618244 0 1 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 1 1 </antecedent>
+<consecuent type="double" len="3">0.665851 0 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 1 1 </antecedent>
+<consecuent type="double" len="3">0.665851 1 0 </consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 1 1 </antecedent>
+<consecuent type="double" len="3">0.665851 0 1 </consecuent>
+</Rule>
+<numclasses>3</numclasses>
+</KnowledgeBase>

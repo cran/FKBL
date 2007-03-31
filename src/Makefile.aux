@@ -1,0 +1,55 @@
+# Just in case you don't have bison and flex
+
+SHELL = /bin/sh
+BISON = bison
+FLEX = flex
+CXX = g++
+OSTYPE = linux-gnu
+
+ifeq ($(OSTYPE),linux-gnu)
+            SHARED = -shared
+else ifeq ($(OSTYPE),macos)
+            SHARED = -dynamiclib
+    endif
+
+R_INCL= -I/usr/share/R/include $(R_XTRA_CPPFLAGS)
+R_LINK = -L/usr/lib/R/lib -lR
+CFLAGS =  -fpic -g -Wall -pedantic -O4
+
+FKBL_LIB = fkbl.so
+
+
+all: $(FKBL_LIB)
+
+$(FKBL_LIB): InferenciaBorrosa.o InterfazR.o Michigan.o Pittsburgh.o auxR.o combinaciones.o train.o lexico.o sintactico.o SeleccGen.o SeleccGenMO.o MOGA.o
+	$(CXX) $(SHARED) -o $(FKBL_LIB) InferenciaBorrosa.o InterfazR.o Michigan.o Pittsburgh.o SeleccGen.o auxR.o combinaciones.o train.o sintactico.o lexico.o SeleccGenMO.o MOGA.o $(R_LINK)
+InferenciaBorrosa.o: InferenciaBorrosa.h InferenciaBorrosa.cc
+	$(CXX) $(R_INCL) $(CFLAGS) -c InferenciaBorrosa.cc -o InferenciaBorrosa.o 
+InterfazR.o: InterfazR.cc InterfazR.h sintactico.h combinaciones.h train.h Michigan.h Pittsburgh.h lexico.h sintactico.h
+	$(CXX) $(R_INCL) $(CFLAGS) -c InterfazR.cc -o InterfazR.o 
+Michigan.o: Michigan.cc Michigan.h InferenciaBorrosa.h
+	$(CXX) $(R_INCL) $(CFLAGS) -c Michigan.cc -o Michigan.o 
+MOGA.o: MOGA.cc MOGA.h
+	$(CXX) $(R_INCL) $(CFLAGS) -c MOGA.cc -o MOGA.o
+SeleccGen.o: SeleccGen.cc SeleccGen.h
+	$(CXX) $(R_INCL) $(CFLAGS) -c SeleccGen.cc -o SeleccGen.o
+SeleccGenMO.o: SeleccGenMO.cc SeleccGenMO.h
+	$(CXX) $(R_INCL) $(CFLAGS) -c SeleccGenMO.cc -o SeleccGenMO.o
+Pittsburgh.o: Pittsburgh.cc Pittsburgh.h InferenciaBorrosa.h
+	$(CXX) $(R_INCL) $(CFLAGS) -c Pittsburgh.cc -o Pittsburgh.o 
+auxR.o: auxR.cc
+	$(CXX) $(R_INCL) $(CFLAGS) -c auxR.cc -o auxR.o 
+combinaciones.o: combinaciones.h combinaciones.cc
+	$(CXX) $(R_INCL) $(CFLAGS) -c combinaciones.cc -o combinaciones.o 
+train.o: train.h train.cc
+	$(CXX) $(R_INCL) $(CFLAGS) -c train.cc -o train.o 
+sintactico.o: sintactico.cc
+	$(CXX) -c sintactico.cc $(R_INCL) $(CFLAGS) 
+#sintactico.cc: sintactico.y InferenciaBorrosa.h lexico.h
+#	$(BISON) --defines=sintactico.h -osintactico.cc sintactico.y
+lexico.o: lexico.cc
+	$(CXX) -c lexico.cc $(R_INCL) $(CFLAGS) 
+#lexico.cc: lexico.l
+#	$(FLEX) -olexico.cc lexico.l
+clean:
+	rm -f *.o *.so *~  \#*\#

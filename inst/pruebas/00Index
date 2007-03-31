@@ -1,0 +1,11 @@
+demoA	Demostration of the problem A
+demoAII	Demostration of the problem A, but only with the Confidence Support algorithm with fourth heuristic
+demoB 	Demostration of the problem B
+demoBII	Demostration of the problem A, but only with the Confidence Support algorithm with fourth heuristic
+demoIRIS	Demostration of IRIS problem, with a specific train data, test data, and partitions
+demoIRIS3	Demostration of IRIS problem, with a specific partitions
+demoIRIS2	Demostration of IRIS problem, with random partitions
+MOGAGlass	Demostration of Glass problem with the MOGA algorithm
+MOGAIRIS	Demostration of IRIS problem with the MOGA algorithm
+MOGAWine	Demostration of Wine problem with the MOGA algorithm
+MOGAPima	Demostration of Pima problem with the MOGA algorithm

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!ELEMENT KnowledgeBase (Author?, Description?, Partition+,Rule+,
+numclasses)>
+<!ELEMENT Partition (ex)>
+<!ELEMENT Rule (antecedent,consecuent)>
+<!ELEMENT numclasses (#PCDATA)>
+<!ELEMENT ex (#PCDATA)>
+<!ELEMENT antecedent (#PCDATA)>
+<!ELEMENT consecuent (#PCDATA)>
+<!ELEMENT antecedent (#PCDATA)>
+<!ELEMENT consecuent (#PCDATA)>

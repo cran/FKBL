@@ -1,0 +1,519 @@
+<?xml version="1.0"?>
+<!DOCTYPE KnowledgeBase SYSTEM "FKBL.dtd">
+<?xml-stylesheet type="text/xsl" href="FKBL.xsl"?>
+<KnowledgeBase>
+<Author>Alvaro Gonzalez Alvarez</Author>
+<Description>Sistema Borroso de prueba aqui puede venir el nombre del algoritmo y una descripcion de los parametros usados para conseguir el sistema 
+borroso y en general un cajon de sastre</Description>
+<Partition>
+<ex type="double" len="4">0 0.333333 0.666667 1</ex>
+</Partition>
+<Partition>
+<ex type="double" len="4">0 0.333333 0.666667 1</ex>
+</Partition>
+<Partition>
+<ex type="double" len="4">0 0.333333 0.666667 1</ex>
+</Partition>
+<Rule>
+<antecedent type="int" len="3">-1 -1 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 -1 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 -1 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 -1 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 -1 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 0 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 0 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 0 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 0 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 0 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 1 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 1 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 1 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 1 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 1 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 2 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 2 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 2 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 2 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 2 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 3 -1</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 3 0</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 3 1</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 3 2</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">-1 3 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 -1 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 -1 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 -1 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 -1 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 -1 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 0 -1</antecedent>
+<consecuent type="double" len="3">0 0 0.5</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 0 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 0 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 0 2</antecedent>
+<consecuent type="double" len="3">0 0 0.5</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 0 3</antecedent>
+<consecuent type="double" len="3">0 0 0.5</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 1 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 1 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 1 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 1 2</antecedent>
+<consecuent type="double" len="3">0 0 0.5</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 1 3</antecedent>
+<consecuent type="double" len="3">0 0 0.5</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 2 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 2 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 2 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 2 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 2 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 3 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 3 0</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 3 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 3 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">0 3 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 -1 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 -1 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 -1 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 -1 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 -1 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 0 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 0 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 0 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 0 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 0 3</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 1 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 1 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 1 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 1 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 1 3</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 2 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 2 0</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 2 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 2 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 2 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 3 -1</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 3 0</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 3 1</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 3 2</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">1 3 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 -1 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 -1 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 -1 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 -1 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 -1 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 0 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 0 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 0 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 0 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 0 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 1 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 1 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 1 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 1 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 1 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 2 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 2 0</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 2 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 2 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 2 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 3 -1</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 3 0</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 3 1</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 3 2</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">2 3 3</antecedent>
+<consecuent type="double" len="3">0 0.5 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 -1 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 -1 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 -1 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 -1 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 -1 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 0 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 0 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 0 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 0 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 0 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 1 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 1 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 1 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 1 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 1 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 2 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 2 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 2 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 2 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 2 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 3 -1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 3 0</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 3 1</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 3 2</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<Rule>
+<antecedent type="int" len="3">3 3 3</antecedent>
+<consecuent type="double" len="3">0.5 0 0</consecuent>
+</Rule>
+<numclasses>3</numclasses>
+<Error>0.34</Error>
+</KnowledgeBase>
