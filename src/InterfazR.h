@@ -85,7 +85,7 @@ SEXP CtoR (int v);
 
 SEXP CtoR (vector < unsigned int >v);
 
-char *RtoC_char (SEXP cad);
+const char *RtoC_char (SEXP cad);
 
 int RtoC_int (SEXP ent);
 

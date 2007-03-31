@@ -331,7 +331,7 @@ SistemaBorroso::toXML (ofstream & f, Meta & mt)
 
   f << "<KnowledgeBase>" << endl;
 
-  for (map < char *, char *>::iterator itr =
+  for (map <const char *, const char *>::iterator itr =
        mt.datos.begin (); itr != mt.datos.end (); itr++)
     f << '<' << itr->first << '>' << itr->
       second << "</" << itr->first << '>' << endl;

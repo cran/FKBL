@@ -93,7 +93,7 @@ RtoC_int (SEXP ent)
   return INTEGER (ent)[0];
 }
 
-char *
+const char *
 RtoC_char (SEXP cad)
 {
   return CHAR (STRING_ELT (cad, 0));
@@ -128,7 +128,7 @@ particion::toR ()
 {
   SEXP obj, Rnombres;
   SEXP RnumMin, RnumMax, Rpart, RnumElem;
-  char *nombres[4] =
+  const char *nombres[4] =
     { "numMin", "numMax", "part", "numElem" };
 
   Rf_protect (RnumMin = Rf_allocVector (REALSXP, 1));
@@ -153,6 +153,7 @@ particion::toR ()
   SET_VECTOR_ELT (obj, 0, RnumMin);
   SET_VECTOR_ELT (obj, 1, RnumMax);
   SET_VECTOR_ELT (obj, 2, Rpart);
+
   SET_VECTOR_ELT (obj, 3, RnumElem);
 
   Rf_setAttrib (obj, R_NamesSymbol, Rnombres);

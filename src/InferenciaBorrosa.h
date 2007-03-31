@@ -125,7 +125,7 @@ public:
 class Meta
 {
 public:
-  map < char *, char *>datos;
+  map <const char *, const char *>datos;
     Meta (SEXP mt_);
     Meta ();
 };
