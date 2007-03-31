@@ -186,7 +186,8 @@ regla::toR ()
 {
   SEXP obj, Rnombres;
   SEXP Rcons, Rantec, RelemA, RelemC;
-  char *nombres[4] = { "cons", "antec", "elemA", "elemC" };
+  const char *nombres[4] = 
+    { "cons", "antec", "elemA", "elemC" };
 
   Rf_protect (Rcons =
 	      Rf_allocVector (REALSXP,
@@ -258,7 +259,7 @@ SistemaBorroso::toR ()
   SEXP obj, Rnombres;
   SEXP Rp, Rr, Rnumclases, Rerror;
   const int len = 4;
-  char *nombres[len] =
+  const char *nombres[len] =
     { "Reglas", "Particiones", "numClases", "error" };
 
 

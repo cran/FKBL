@@ -18,6 +18,16 @@ Where 'version' must be changed with the correct one.
 > library(FKBL)
 \end{ExampleCode}
 \end{enumerate}
+
+\subsection*{Parser modification}
+To modify the parser's behavior you need some bison and flex 
+compatible utilities, and the source code of the parser itself. The 
+source code is located in the  \strong{parser} directory located itself 
+in the \strong{inst} directory of this package. I also supply my 
+\strong{Makefile.hide} to easy the compilation. I assume that 
+everyone who wants to modify the parser, knows, how to do it, or where 
+to ask about it. 
+
 }
 
 \docType{package}

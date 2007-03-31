@@ -1,5 +1,5 @@
-#BISON = bison
-#FLEX = flex
+BISON = bison
+FLEX = flex
 CXX = g++
 OSTYPE = linux-gnu
 
@@ -22,7 +22,7 @@ $(FKBL_LIB): InferenciaBorrosa.o InterfazR.o Michigan.o Pittsburgh.o auxR.o comb
 	$(CXX) $(SHARED) -o $(FKBL_LIB) InferenciaBorrosa.o InterfazR.o Michigan.o Pittsburgh.o SeleccGen.o auxR.o combinaciones.o train.o sintactico.o lexico.o SeleccGenMO.o MOGA.o $(R_LINK)
 InferenciaBorrosa.o: InferenciaBorrosa.h InferenciaBorrosa.cc
 	$(CXX) $(R_INCL) $(CFLAGS) -c InferenciaBorrosa.cc -o InferenciaBorrosa.o 
-InterfazR.o: InterfazR.cc InterfazR.h sintactico.h combinaciones.h train.h Michigan.h Pittsburgh.h lexico.h sintactico.h
+InterfazR.o: InterfazR.cc InterfazR.h sintactico.cc combinaciones.h train.h Michigan.h Pittsburgh.h lexico.h sintactico.h
 	$(CXX) $(R_INCL) $(CFLAGS) -c InterfazR.cc -o InterfazR.o 
 Michigan.o: Michigan.cc Michigan.h InferenciaBorrosa.h
 	$(CXX) $(R_INCL) $(CFLAGS) -c Michigan.cc -o Michigan.o 
@@ -42,11 +42,11 @@ train.o: train.h train.cc
 	$(CXX) $(R_INCL) $(CFLAGS) -c train.cc -o train.o 
 sintactico.o: sintactico.cc
 	$(CXX) -c sintactico.cc $(R_INCL) $(CFLAGS) 
-sintactico.cc: sintactico.y InferenciaBorrosa.h lexico.h
-	$(BISON) --defines=sintactico.h -osintactico.cc sintactico.y
+sintactico.cc: syntactic.y InferenciaBorrosa.h lexico.h
+	$(BISON) --defines=sintactico.h -osintactico.cc syntactic.y
 lexico.o: lexico.cc
 	$(CXX) -c lexico.cc $(R_INCL) $(CFLAGS) 
-lexico.cc: lexico.l
-	$(FLEX) -olexico.cc lexico.l
+lexico.cc: lexical.l
+	$(FLEX) -olexico.cc lexical.l
 clean:
 	rm -f *.o *.so *~  \#*\#

@@ -1,4 +1,4 @@
-useDynLib(fkbl)
+useDynLib(FKBL)
 export(  CPart )
 export(  CP )
 export(  CPart2 )
